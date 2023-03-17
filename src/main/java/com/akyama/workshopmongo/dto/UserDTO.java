@@ -5,16 +5,16 @@ import com.akyama.workshopmongo.domain.User;
 import java.io.Serializable;
 
 public class UserDTO implements Serializable {
-    public static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private String name;
     private String email;
 
-    public UserDTO(){
+    public UserDTO() {
     }
 
-    public UserDTO(User obj){
+    public UserDTO(User obj) {
         id = obj.getId();
         name = obj.getName();
         email = obj.getEmail();

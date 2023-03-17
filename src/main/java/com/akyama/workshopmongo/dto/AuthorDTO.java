@@ -5,15 +5,15 @@ import com.akyama.workshopmongo.domain.User;
 import java.io.Serializable;
 
 public class AuthorDTO implements Serializable {
-    public static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private String name;
 
-    public AuthorDTO(){
+    public AuthorDTO() {
     }
 
-    public AuthorDTO(User obj){
+    public AuthorDTO(User obj) {
         id = obj.getId();
         name = obj.getName();
     }
@@ -33,5 +33,4 @@ public class AuthorDTO implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
 }
